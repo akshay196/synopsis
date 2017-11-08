@@ -1,0 +1,144 @@
+% Inline licence here
+
+\documentclass[a4paper,12pt]{report}
+
+% Include Packages
+\usepackage[a4paper,left=2.5cm,top=2.5cm,bottom=2.5cm,
+	right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+%=============Formating============%
+% Customize chapter 
+\titleformat{\chapter}[block]{\LARGE\bfseries}{Chapter \thechapter}
+{0.5em} % sep
+{} % before-code
+[] % after-code
+
+% Page Header and Footer
+\pagestyle{fancy}
+\rhead{\textbf{Enhance ManageIQ}}
+\chead{}
+\lhead{}
+\lfoot{Department of Computer Science and Engineering. RIT,Rajaramnagar}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\footrulewidth}{.4pt}
+\renewcommand{\headrulewidth}{.4pt}
+
+
+% Redefine for plain styling page
+\fancypagestyle{plain}{
+\rhead{}
+\chead{}
+\lhead{}
+\lfoot{Department of Computer Science and Engineering. RIT,Rajaramnagar}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{.4pt}
+}
+
+
+%% To check font size %%
+\makeatletter
+\newcommand{\showfontsize}{\f@size{} pt}
+\makeatother
+
+\begin{document}
+\tableofcontents{}
+
+\chapter{Introduction}
+
+ManageIQ is an open source management platform for Hybrid IT. It can manage small and large environments, and supports multiple technologies such as virtual machines, public clouds and containers.
+
+With ManageIQ you will be able to:
+\begin{itemize}
+	\item Continuously discover the latest state of your environment.
+	\item Implement self service for your end users.
+	\item Enforce compliance across the environment.
+	\item Optimize the performance and utilization of your environment.
+\end{itemize}
+
+\chapter{Problem Statement}
+ManageIQ is an open source cloud management platform. It was founded by Red Hat as a community project in 2014, and forms the basis for its CloudForms product. It allows centralized management of various virtualization, private cloud, public cloud, containers, middleware and software defined networking technologies.\\
+
+ManageIQ is written in the Ruby language and uses the Ruby on Rails framework. The ManageIQ software is shipped as a pre-built virtual appliance, roughly 1GB in size. The appliance is based on the CentOS operating system, and includes an embedded PostgreSQL database. Since the Darga release, a container based version has also been made available.\\
+
+Fine is the latest release of ManageIQ on 17 May 2017 which mainly focuses on automation with Ansible, improved AWS support including storage, new Physical Infrastructure provider type.\\
+
+Ansible is an open source automation platform. Ansible can help you with configuration management, application deployment, task automation. In simple terms assume you need to install a thing suppose tomcat on different systems, usually admin will have to install separately on those different machines. But now with the latest technologies you can do this task easier using ansible. Admin will assign this task to a machine, and whenever tomcat needs to be installed the machine will install the instance for it rather than admin and will be easier. For this they need two things, Inventory Files and Playbook.\\
+
+Playbook contains a number of plays in it while plays have different tasks within them. These tasks call the module. All the tasks in a play run sequentially and they as well trigger the handlers that are run once at the end of the play. Handlers are itself a task. The plays in playbook and the tasks in the play can also be from different other playbooks.\\
+
+Since ManageIQ code-name Fine release it is possible to automate environment using Ansible instead of ManageIQ's legacy Automate Datastore which uses Ruby. \textbf{Goal of this project is to develop automation using Ansible and Ruby to extend usage of ManageIQ for hybrid cloud management and automation.}
+
+
+\chapter{Literature Survey}
+
+\chapter{National/International Status}
+Since 2000, cloud computing has come into existence. In early 2008, NASA's OpenNebula, enhanced in the RESERVOIR European Commission-funded project, became the first open-source software for deploying private and hybrid clouds, and for the federation of clouds. In the same year, efforts were focused on providing quality of service guarantees (as required by real-time interactive applications) to cloud-based infrastructures, in the framework of IRMOS European Commission-funded project, resulting in a real-time cloud environment.\\
+
+In August 2006 Amazon introduced its Elastic Compute Cloud. Microsoft Azure was announced as "Azure" in October 2008 and was released on 1 February 2010 as Windows Azure, before being renamed to Microsoft Azure on 25 March 2014.\\
+
+In July 2010, Rackspace Hosting and NASA jointly launched an open-source cloud-software initiative known as OpenStack. The OpenStack project intended to help organizations offering cloud-computing services running on standard hardware. The early code came from NASA's Nebula platform as well as from Rackspace's Cloud Files platform. As an open source offering and along with other open-source solutions such as CloudStack, Ganeti and OpenNebula, it has attracted attention by several key communities. Several studies aim at comparing these open sources offerings based on a set of criteria.\\
+
+On June 19,2014, Red Hat Inc., the world’s leading provider of open source solutions, announced the launch of the ManageIQ community with the availability of ManageIQ’s fully open-sourced code repository and the first builds of the project. The ManageIQ community aims to provide the industry's leading open source cloud management platform with advanced governance and automation capabilities.
+"With the full release of the ManageIQ code, Red Hat is making an important contribution towards the development of an open cloud management ecosystem"
+\footnote{Mary Johnston Turner, Research Vice President, Enterprise Systems Management Software, IDC Research}\\
+
+ManageIQ community announced Fine Beta release of ManageIQ on April 5,2017. Fine is the next milestone release for ManageIQ cloud and virtualization management platform. With each release, ManageIQ gets more robust and feature complete across providers. In this release, a lot of attention was given to Ansible. However, other providers, REST API, as well as performance also benefit in this release.\\
+
+Red Hat CloudForms is an enterprise grade cloud management platform, sold by Red Hat to its customers under a subscription model. CloudForms is based on code from the open source ManageIQ project.
+
+\chapter{Applications}
+ManageIQ is used for management of hybrid cloud. Cloud management is the management of cloud computing products and services. Public clouds are managed by public cloud service providers, which include the public cloud environment’s servers, storage, networking and data center operations. Managing a private cloud requires software tools to help create a virtualized pool of compute resources, provide a self-service portal for end users and handle security, resource allocation, tracking and billing.\\
+
+In hybrid cloud environments, compute, network and storage resources must be managed across multiple domains, so a good management strategy should start by defining what needs to be managed, and where and how to do it.\\
+
+Network management is the process of administering and managing the computer networks of one or many organizations. Various services provided by network managers include fault analysis, performance management, provisioning of network and network devices, maintaining the quality of service, and so on. Software that enables network administrators or network managers to perform their functions is called network management software.\\
+
+\chapter{Objectives of Project}
+\begin{enumerate}
+	\item Understand basic concepts required for project
+	\item Create project environment and deploy ManageIQ appliance
+	\item Setup and configuration of ManageIQ 
+	\item Setup provider and integrate 	this provider with ManageIQ
+	\item Review Provider details 
+	\item Provision instance form ManageIQ
+	\item Develop Ansible Playbooks which can be imported as ansible repositories in ManageIQ.
+	\item Develop Service dialogs needed to execute playbooks as service catalogs
+	\item Develop or/and enhance code required for automate
+	\item Write documentation which should help others to use those playbooks in their environment
+\end{enumerate}
+
+\chapter{Future Scope}
+Adoption of cloud computing technology has significantly increased over the last few years, promising a great opportunity for innovation amongst businesses. However some businesses are still sceptical of how Cloud Computing can enhance or replace all or part of their IT environment.\\
+
+Cloud is typically marketed to promote benefits such as improved efficiency, flexibility and even opportunity for expansion. However many of these benefits lack tangibility, often making it difficult to validate a move to the cloud.\\
+
+Organisations considering the change typically look at implementing a solution that incorporates a mix of on premise, and public or private cloud, referred to as a hybrid cloud model.\\
+
+Business continuity has been identified as one of the most important elements of business operations. A business continuity solution is not just simply backing up and/or replicating content to the cloud, nor is it simply a Disaster Recovery plan. Business continuity is to continue to do business during a failure or disaster. In basic terms, it means that when a failure or disaster happens, that data is still accessible with little to no downtime.\\
+
+A business continuity solution therefore needs to be planned to consider key elements such as resilience, recovery and contingency. Hybrid cloud solutions are often considered by organisations as a key component of a business continuity solution where critical data is replicated to a cloud solution in a different location to the primary systems. This provides data insurance in the event of a disaster (natural or technological), minimising downtime and the costs associated with such an event. Understanding this benefit, service providers have streamlined their offerings to easily integrate a business continuity solution into hybrid cloud systems.\\
+
+Barriers to innovation are reduced in a cloud environment, as large capital expenditure is not required for modelling a new service. Previously, cost associated with such a task would include capital expenditure for infrastructure, labour and time for research then more resources to install and maintain. This places a lot of pressure on capacity management practices and perfect forecasting despite many uncertain variables. In hybrid cloud, concepts can be tested without capital expenditure, prototyped in a cloud environment then rapidly deployed and measured for success. The added benefit of hybrid cloud is the availability of resources combining both internal and external environments including data, network, and infrastructure, all available on iseek’s cloud environment.\\
+
+Scaling on IT infrastructure can be extremely expensive, inefficient and places much more pressure on accurate forecasting in growing companies. However, a hybrid cloud environment can provide the opportunity for businesses to scale out to a cloud environment for specific workloads. Implementing automation rules on the cloud provides the ability to scale resources up and down as business demands change. This allows the hybrid cloud system to take advantage of unlimited resources based on demand driven usage, optimising the environment for performance and efficiency.\\
+
+In many organisations, speed to market is a key differentiator. In a digital age, the ability to quickly spin up environments to test, prototype and launch new products is highly desirable. For organisations with an IT infrastructure that is working near or close to capacity, spinning up a new environments can become a challenge and potentially hinder the business\\
+
+Hybrid cloud allows resources to be deployed and commissioned in an automated process that can yield results at hugely improved speeds, so companies are no longer limited by their IT footprint.\\
+
+Companies can leverage hybrid cloud as the first step in moving to a predominately cloud environment. A hybrid solution provides the perfect opportunity for companies to test the capability of certain workloads and providers in a cloud based environment and assist them in planning their cloud strategy. However planning is key, as hybrid cloud can require complex design to coherently combine an organisation’s platform with a cloud environment.
+
+\chapter{Methodology}
+
+
+
+
+\end{document}
+
