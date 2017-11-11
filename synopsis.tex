@@ -133,7 +133,7 @@ Since 2000, cloud computing has come into existence. In early 2008, NASA's OpenN
 In August 2006 Amazon introduced its Elastic Compute Cloud. Microsoft Azure was announced as "Azure" in October 2008 and was released on 1 February 2010 as Windows Azure, before being renamed to Microsoft Azure on 25 March 2014.\\
 
 In July 2010, Rackspace Hosting and NASA jointly launched an open-source cloud-software initiative known as OpenStack. The OpenStack project intended to help organisations offering cloud-computing services running on standard hardware. The early code came from NASA's Nebula platform as well as from Rackspace's Cloud Files platform. As an open source offering and along with other open-source solutions such as CloudStack, Ganeti and OpenNebula, it has attracted attention by several key communities. Several studies aim at comparing these open sources offerings based on a set of criteria.\\
-
+s
 On June 19,2014, Red Hat Inc., the world’s leading provider of open source solutions, announced the launch of the ManageIQ community with the availability of ManageIQ’s fully open-sourced code repository and the first builds of the project. The ManageIQ community aims to provide the industry's leading open source cloud management platform with advanced governance and automation capabilities.
 "With the full release of the ManageIQ code, Red Hat is making an important contribution towards the development of an open cloud management ecosystem"
 \footnote{Mary Johnston Turner, Research Vice President, Enterprise Systems Management Software, IDC Research}\\
@@ -209,26 +209,23 @@ Companies can leverage hybrid cloud as the first step in moving to a predominate
 
 \chapter{Methodology}
 
-Setup project environment for a local and a virtual machine\\
-The virtual machine requires 8Gb RAM and four vCPU to run ManageIQ fluently. The system is installed using CentOS operating system. CentOS is a linux flavour with linux kernel. \\
+\textbf{Setup project environment}\\
+The virtual machine requires 8Gb RAM and four vCPU to run ManageIQ fluently. The system is installed using CentOS operating system. CentOS is a linux flavour with linux kernel.\\
 
-ManageIQ installation on Virtual Machine\\
-
+\textbf{ManageIQ installation on Virtual Machine}\\
 ManageIQ appliance is required for this which can be run on QEMU/KVM. ManageIQ appliance is directly available on the ManageIQ site. So this qcow2 image is to be downloaded and deploy it on VM. After launching instance of that VM, we are able to run ManageIQ service. The ManageIQ applicancation can be controlled using appliance-console with command line interface.\\
 
-OpenStack installation using packstack\\
-
+\textbf{OpenStack installation using packstack}\\
 OpenStack is installed on the machine using packstack to manage the controlling and monitoring of the private cloud. We need to install OpenStack allinone installation and configure to launch instances. Integration of OpenStack in ManageIQ in required to monitor the instances and services of OpenStack.\\
 
-Develop Ansible Playbook\\
+\textbf{Develop Ansible Playbook}\\
+Installation on Ansible and develop playbook which can be imported in ManageIQ for automation. Learn to develop playbook is required.\\
 
-Installation on Ansible and develop playbook which can be imported in ManageIQ for automation. Learn to develop playbook is required. \\
-
-Create service dialogs\\
+\textbf{Create service dialogs}\\
 Dialog services are needed to be created to execute the above created ansible playbook.\\
 
-Create documentation\\
-Doing a task is must, but its documentation is more valuable as that of project. The details of the projects are to be documented with all the installation procedure and the actual flow of project implementation to help other people understand the project brightly.
+\textbf{Create documentation}\\
+Doing a task is must, but its documentation is more valuable as that of project. The details of the projects are to be documented with all the installation procedure and the actual flow of project implementation to help other people understand the project brightly.\\
 
 \chapter{Conclusion}
 
