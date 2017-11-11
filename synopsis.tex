@@ -51,6 +51,15 @@
 \tableofcontents{}
 
 \chapter{Introduction}
+Cloud is a buzzword in today's world as cloud is used by a person every time , any time, anywhere and anyhow. Cloud is the solution to any storage or computational work. Cloud is a huge platform to explore and yet lot to learn. Cloud management means the software and technologies designed for operating and monitoring applications, data and services residing in the cloud. Cloud management tools help ensure cloud computing-based resources are working optimally and properly interacting with users and other services.
+
+Cloud management strategies typically involve numerous tasks including performance monitoring, security and compliance auditing and management, and initiating and overseeing disaster recovery and contingency plans.
+
+Public cloud is one based on the standard cloud computing model, in which a service provider makes resources, such as virtual machines (VMs), applications or storage, available to the general public over the internet. Public cloud services may be free or offered on a pay-per-usage model.
+
+Private cloud is a type of cloud computing that delivers similar advantages to public cloud, including scalability and self-service, but through a proprietary architecture. Unlike public clouds, which deliver services to multiple organizations, a private cloud is dedicated to a single organization.
+
+Hybrid cloud is maintained by both internal and external providers. In effect, a hybrid cloud is a combination of public and private cloud services, with orchestration between the two. In some cases, this model is attractive because it enables organizations to tap into the benefits of the public cloud, while maintaining their own private cloud for sensitive, critical or highly regulated data and applications.
 
 ManageIQ is an open source management platform for Hybrid IT. It can manage small and large environments, and supports multiple technologies such as virtual machines, public clouds and containers.
 
@@ -61,6 +70,12 @@ With ManageIQ you will be able to:
 	\item Enforce compliance across the environment.
 	\item Optimize the performance and utilization of your environment.
 \end{itemize}
+
+Virtualization is the creation of a virtual rather than actual version of something, such as an operating system, a server, a storage device or network resources.
+
+Operating system virtualization is the use of software to allow a piece of hardware to run multiple operating system images at the same time. The technology got its start on mainframes decades ago, allowing administrators to avoid wasting expensive processing power.
+
+Cloud Providers serve different purposes and services. Some of the cloud providers are mentioned  below.
 
 \chapter{Problem Statement}
 ManageIQ is an open source cloud management platform. It was founded by Red Hat as a community project in 2014, and forms the basis for its CloudForms product. It allows centralized management of various virtualization, private cloud, public cloud, containers, middleware and software defined networking technologies.\\
@@ -78,7 +93,41 @@ Since ManageIQ code-name Fine release it is possible to automate environment usi
 
 \chapter{Literature Survey}
 
+Linux is a name which broadly denotes a family of free and open-source software operating system distributions built around the Linux kernel. The defining component of a Linux distribution is the Linux kernel, an operating system kernel first released on September 17, 1991 by Linus Torvalds.\\
+
+Typically, Linux is packaged in a form known as a Linux distribution for both desktop and server use. Some of the most popular and mainstream Linux distributions are Arch Linux, CentOS, Debian, Fedora, Gentoo Linux, Linux Mint, Mageia, openSUSE and Ubuntu, together with commercial distributions such as Red Hat Enterprise Linux and SUSE Linux Enterprise Server.\\
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source software. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribute to.\\
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word processors and web browsers, can be swapped out.\\
+
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development. 2.15 is the latest git version released on 2017-10-30.\\
+
+Virtualization is technology that allows you to create multiple simulated environments or dedicated resources from a single, physical hardware system. Software called a hypervisor connects directly to that hardware and allows you to split 1 system into separate, distinct, and secure environments known as virtual machines (VMs). These VMs rely on the hypervisor’s ability to separate the machine’s resources from the hardware and distribute them appropriately.\\
+
+\pagebreak
+Types of virtualization:
+\begin{itemize}
+	\item Server Virtualization
+	\item OS Virtualization
+	\item Network Virtualization
+	\item Hardware Virtualization
+	\item Application Virtualization
+	\item Storage Virtualization
+\end{itemize}
+
+Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. According to its creator, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management. 2.4 is the latest ruby version with 2.4.2 as latest tenant on date 2016-12-25 and hoping for 2.5 version of ruby in Dec'17. The syntax of Ruby is broadly similar to that of Perl and Python.\\
+
+OpenStack is a free and open-source software platform for cloud computing, mostly deployed as infrastructure-as-a-service (IaaS), whereby virtual servers and other resources are made available to customers. OpenStack Pike is latest version of OpenStack released on 30 August 17. The goals of the OpenStack initiative are to support interoperability between cloud services and allow businesses to build Amazon-like cloud services in their own data centers.\\
+
+Cloud computing has made drastic change in the reduction of hardware and software cost and other server resources as well.Cloud computing solutions for business leads to increased efficiency; services are rapidly deployed and ready for use in minutes.\\
+
+As we know public and private cloud are used by different organizations, colleges, universities, etc. Private cloud provides scalability, elasticity, self service, etc. but to a single organization where the security is measured. Public cloud is same as private but shared among different organizations where security can be at risk. Whereas hybrid cloud is the combination of the two different clouds i.e. Public as well Private cloud. \\
+
+With cloud automation, an organization eliminates these repetitive and manual processes for workload deployment and management. To achieve cloud automation, an IT team needs to use orchestration and automation tools that run on top of their virtualized environment. Orchestration enables an administrator to codify the various steps and processes involved with workload deployment and management, while automation invokes those steps without human intervention.So we thought of automating hybrid cloud using Ansible and Ruby to enhance its use with ManageIQ. This will help increase the use and enhancement of hybrid cloud.\\
+
 \chapter{National/International Status}
+
 Since 2000, cloud computing has come into existence. In early 2008, NASA's OpenNebula, enhanced in the RESERVOIR European Commission-funded project, became the first open-source software for deploying private and hybrid clouds, and for the federation of clouds. In the same year, efforts were focused on providing quality of service guarantees (as required by real-time interactive applications) to cloud-based infrastructures, in the framework of IRMOS European Commission-funded project, resulting in a real-time cloud environment.\\
 
 In August 2006 Amazon introduced its Elastic Compute Cloud. Microsoft Azure was announced as "Azure" in October 2008 and was released on 1 February 2010 as Windows Azure, before being renamed to Microsoft Azure on 25 March 2014.\\
@@ -99,6 +148,29 @@ ManageIQ is used for management of hybrid cloud. Cloud management is the managem
 In hybrid cloud environments, compute, network and storage resources must be managed across multiple domains, so a good management strategy should start by defining what needs to be managed, and where and how to do it.\\
 
 Network management is the process of administering and managing the computer networks of one or many organizations. Various services provided by network managers include fault analysis, performance management, provisioning of network and network devices, maintaining the quality of service, and so on. Software that enables network administrators or network managers to perform their functions is called network management software.\\
+
+Cloud management is the management of cloud computing products and services. Public clouds are managed by public cloud service providers, which include the public cloud environment’s servers, storage, networking and data center operations. Managing a private cloud requires software tools to help create a virtualized pool of compute resources, provide a self-service portal for end users and handle security, resource allocation, tracking and billing.\\
+
+In hybrid cloud environments, compute, network and storage resources must be managed across multiple domains, so a good management strategy should start by defining what needs to be managed, and where and how to do it.\\
+
+Cloud computing is an information technology (IT) paradigm, a model for enabling ubiquitous access to shared pools of configurable resources (such as computer networks, servers, storage, applications and services), which can be rapidly provisioned with minimal management effort, often over the Internet. Cloud computing allows users and enterprises with various computing capabilities to store and process data either in a privately-owned cloud, or on a third-party server located in a data center, thus making data-accessing mechanisms more efficient and reliable.\\
+
+Storage management usually refers to the management of Computer data storage, which includes memory management. It can also refer to specific methods or products for storage management, such as the following
+\begin{itemize}
+	\item ADSTAR Distributed Storage Manager
+	\item Automatic Storage Management
+	\item Hierarchical storage management
+	\item IBM Tivoli Storage Manager
+	\item OpenView Storage Area Manager
+	\item Storage Management Initiative - Specification
+	\item Storage Resource Manager
+	\item Storage Resource Management
+\end{itemize}
+
+Cloud automation is a fundamental building block for the cloud computing paradigm. Automation aims to make all activities related to cloud computing as fast, efficient, and as hands off as possible through the use of various software automation tools which are installed directly on the virtualization platform or software and controlled via an intuitive interface.\\
+
+Cloud Optimization is about automating and refining the standardization of your infrastructure. It is also about taking advantage of the unique characteristics of the cloud. Companies at this stage have a holistic business view of the cloud ecosystem, with tools that facilitate optimization, standardization, and reporting from a business perspective. Organizations at the optimization phase are trying to utilize as close to 100% of the resources provisioned as possible while maintaining availability and performance across their workloads.
+
 
 \chapter{Objectives of Project}
 \begin{enumerate}
@@ -137,8 +209,26 @@ Companies can leverage hybrid cloud as the first step in moving to a predominate
 
 \chapter{Methodology}
 
+Setup project environment for a local and a virtual machine\\
+The virtual machine requires 8Gb RAM and four vCPU to run ManageIQ fluently. The system is installed using CentOS operating system. CentOS is a linux flavour with linux kernel. \\
 
+ManageIQ installation on Virtual Machine\\
 
+ManageIQ appliance is required for this which can be run on QEMU/KVM. ManageIQ appliance is directly available on the ManageIQ site. So this qcow2 image is to be downloaded and deploy it on VM. After launching instance of that VM, we are able to run ManageIQ service. The ManageIQ applicancation can be controlled using appliance-console with command line interface.\\
+
+OpenStack installation using packstack\\
+
+OpenStack is installed on the machine using packstack to manage the controlling and monitoring of the private cloud. We need to install OpenStack allinone installation and configure to launch instances. Integration of OpenStack in ManageIQ in required to monitor the instances and services of OpenStack.\\
+
+Develop Ansible Playbook\\
+
+Installation on Ansible and develop playbook which can be imported in ManageIQ for automation. Learn to develop playbook is required. \\
+
+Create service dialogs\\
+Dialog services are needed to be created to execute the above created ansible playbook.\\
+
+Create documentation\\
+Doing a task is must, but its documentation is more valuable as that of project. The details of the projects are to be documented with all the installation procedure and the actual flow of project implementation to help other people understand the project brightly.
 
 \end{document}
 
